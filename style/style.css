@@ -1,0 +1,199 @@
+body {
+    background: rgb(0,0,0);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), color-stop(50%, rgba(27,26,26,1)), to(rgba(0,0,0,1)));
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    color: white;
+    margin: 0;
+    position: relative;
+}
+
+/* Disable up/down arrows in the numeric input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+/* SEARCH */
+
+.search {
+    text-align: center;
+}
+
+.search h1 {
+    font-size: 7vmin;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+.search h1 a,
+.search h1 a:link,
+.search h1 a:visited,
+.search h1 a:active{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.search-input {
+    text-align: center;
+}
+
+.search-input input {
+    height: 3rem;
+    border: 1px solid #999;
+    background-color: rgba(0, 0, 0, .0);
+    color: #f5f5f5;
+    font-size: 4.6vmin;
+    padding: 8px;
+}
+
+.search-input--field{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.result-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    background: rgb(0,0,0);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), color-stop(50%, rgba(27,26,26,1)), to(rgba(0,0,0,1)));
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    padding: 0;
+}
+
+.result-list li{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.result-list li:hover{
+    color: #00d5ff;
+}
+
+.result-list li img{
+    height: 60px;
+    margin-left: 15px;
+}
+
+/* RESULT OUTPUT */
+
+.result {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.result p {
+    font-size: 6vmin;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+.result-hours-per-day p{
+    font-size: 3.6vmin;
+    margin: 0;
+}
+
+.result-hours-per-day input {
+    width: 7%;
+    height: 3rem;
+    border: 0px;
+    background-color: rgba(0, 0, 0, .0);
+    color: #f5f5f5;
+    font-size: 4.6vmin;
+    padding: 8px;
+}
+
+.result-season {
+    font-size: 2.6vmin;
+}
+
+.result img {
+    max-width: 290px;
+    -webkit-box-shadow: 0px -3px 10px 7px #4b4b4b;
+            box-shadow: 0px -3px 10px 7px #4b4b4b;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(0,0,0);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), color-stop(50%, rgba(27,26,26,1)), to(rgba(0,0,0,1)));
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,26,26,1) 50%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+footer span {
+    padding: 0 15px;
+}
+
+footer img{
+    width: 130px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e66161;
+}
