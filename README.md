@@ -1,4 +1,4 @@
 # binge-watch
 Binge watch counter
 
-Check the demo at https://zoltan.tech/binge-watch
+Check the demo at https://zoltanlederer.com/binge-watch/
